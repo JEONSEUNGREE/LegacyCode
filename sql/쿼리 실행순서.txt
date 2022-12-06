@@ -1,0 +1,17 @@
+SELECT
+FROM 
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+
+위와같이 기본적인 쿼리가 존재한다
+실행 순서는 다음과 같다.
+1. FROM절을 실행해 테이블 존재를확인하고 SELECT 권한 여부를 보게된다.
+2. WHERE절에 조건을 본다.
+3. GROUP BY그룹을 지정하게 된다.
+4. HAVING절에서 필요한 데이터만 가져온다.
+5. SELECT절에서 해당 컬럼을 가져오게 되는데 이미 위에서 조회가 되었기 때문에
+사실상 SELECT * FROM 과 같아서 SELECT 특정 컬럼과 속도가 같다고 볼수있다.
+6. ORDER BY를 통해 정렬하는데 GROUP BY와 다르게 SELECT절 조회후 ORDER BY가 실행되었기때문에
+SELECT절에 Alias가 된 SUM과 같은 컬럼을 사용할수있다 GROUP BY는 SELECT절 이전에 사용되었기에 오류가 발생함
