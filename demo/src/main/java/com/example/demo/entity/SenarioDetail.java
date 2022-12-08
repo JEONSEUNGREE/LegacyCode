@@ -22,13 +22,4 @@ public class SenarioDetail {
     private Long suggestDetailId;
 
     private String suggestMsId;
-
-    @OneToMany(mappedBy = "suggestDetailId")
-    List<Filter1> filter1 = new ArrayList<>();
-
-    @OneToMany(mappedBy = "suggestDetailId")
-    List<Filter2> filter2 = new ArrayList<>();
-
-    @OneToMany(mappedBy = "suggestDetailId")
-    List<Filter3> filter3 = new ArrayList<>();
 }

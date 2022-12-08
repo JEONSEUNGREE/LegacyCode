@@ -22,8 +22,7 @@ public class SenarioMs {
 
     private String suggestNm;
 
-    @OneToMany(mappedBy = "suggestMsId")
-    List<SenarioDetail> senarioDetails = new ArrayList<>();
+    private Long suggestDetailId;
 
     private boolean abYn;
 
